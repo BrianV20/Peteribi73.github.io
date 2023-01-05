@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Encriptador Alura</title>
+</head>
+<body>
+    <header>
+        <div class="hdr">
+            <img src="/img/logo.png" alt="logo de alura" class="aluraLogo">
+            <h1 class="title">Encriptador de mensajes</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="item" id="item-1"></div>
+        <div class="item" id="item-2">
+            <input type="text" class="texto-a-encriptar" id="texto-a-encriptar" placeholder="su texto a encriptar/desencriptar...">
+        </div>
+        <div class="item" id="item-3">
+            <div id="div-imagen">
+                <img src="img/sin-texto.png" alt="sin-texto" class="sin-texto" id="imagen-sin-texto">
+                <!--<div class="div-input-rta">
+                    <input type="text" id="input-rta">
+                </div>-->
+            </div>
+        </div>
+    </div>
+
+    <!-- PRUEBA DE CLAMP-->
+    <!--<div class="clam">
+        <div class="div-p-clam">
+            <p>Prueba de clamp</p>
+        </div>
+    </div>-->
+
+    <div class="div-regla" id="div-regla">
+        <div></div>
+        <div class="wrap-regla">
+            <p class="regla">
+                <i class="fa fa-question-circle" id="icon-question"></i>
+                Solo letras minusculas y sin acentos.
+            </p>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="container-btns">
+        <div class="item" id="container-btns-item1"></div>
+        <div class="item" id="container-btns-item2">
+            <button class="btn" id="encriptar">Encriptar</button>
+            <button class="btn" id="desencriptar">Desencriptar</button>
+        </div>
+        <div class="item" id="container-btns-item3">
+            <button class="btn" id="copiar">Copiar</button>
+        </div>
+    </div>
+    <footer>
+        <div class="ftr">
+            <h2>2022 Derechos Reservados - Brian Velázquez</h2>
+        </div>
+    </footer>
+    <script src="logic.js"></script> 
+</body>
+</html>

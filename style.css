@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: linear-gradient(#C0B9DD, #80A1D4);
+}
+
+.hdr {
+    /*/background-color: #b9fbc0;/*/
+    background-image: linear-gradient(#b9fbc0, #a3c4f3);
+    height: 7rem;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+}
+
+.aluraLogo {
+    max-height: 100%;
+}
+
+.title {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: /*/5% 70% 25%/*/10% 1fr 25%;
+    grid-template-rows: 1fr;
+}
+
+.div-regla {
+    display: grid;
+    grid-template-columns: 10% 1fr 25%;
+    grid-template-rows: 1fr;
+}
+
+.wrap-regla {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.regla {
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.item {
+    max-width: auto;
+    min-height: 35rem;
+    /*/margin-left: 5%;/*/
+    /*/border: red solid 4px;/*/
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: left;
+    color: #0077B6;
+    font-family: 'Helvetica';
+    font-size: 40px;
+}
+
+#div-imagen {
+    height: 90%;
+    align-items: center;
+    /*/background-color: #DED9E2;/*/
+    border-radius: 5px;
+}
+
+.sin-texto {
+    height: 100%;
+    border-radius: 25px;
+    align-items: center;
+    box-shadow: 14px 7px 5px #0077B6;
+}
+
+.texto-a-encriptar {
+    color: #0077B6;
+    font-family: 'Helvetica';
+    font-size: 40px/*/clamp(, 3.5rem, 2vw)/*/;
+    /*/border: 0;/*/
+    /*/width:80%;/*/
+
+    width: /*/min(60%, 700px)/*/clamp(60px, 80%, 90%);
+
+    overflow:scroll;
+    border: 3.5px solid #0077B6;
+    border-radius: 10px;
+}
+
+.container-btns {
+    display: grid;
+    grid-template-columns: 10% 1fr 25%;
+    grid-template-rows: 1fr;
+}
+
+[id*="container-btns-item"] {
+    min-height: fit-content;
+}
+
+.btn {
+    width: 10rem;
+    min-height: 4rem;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.ftr {
+    background-image: linear-gradient(#b9fbc0, #a3c4f3);
+    min-height: 6rem;
+    margin-top: 5rem;
+}
+
+.ftr h2{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+#div-imagen input {
+    display: none;
+}
+
+
+/*/Prueba de clamp/*/
+/*/.clam {
+    border: 3px solid red;
+}
+
+.div-p-clam {
+    border: 3px solid blue;
+}
+.clam p {
+    border: 2px solid green;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: clamp(10px, 1.5rem, 2vw);
+}/*/
+
+
+
+/*/ Responsiveness */
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .title {
+        font-size: 2.5em;
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto-a-encriptar {
+        color: green;
+        font-size: 1.6rem;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 2.5em;
+        margin-left: 3rem;
+    }
+
+    .hdr {
+        height: 10.5rem;
+    }
+
+    .aluraLogo {
+        display: none;
+    }
+
+    #item-2, #item-3/*/[id*="item-"]/*/ {
+        width: 100%;
+    }
+
+    #item-1{
+        display: none;
+    }
+
+    #item-3 {
+        align-items: center;
+    }
+
+    .container {
+        grid-template-columns: 100%;
+        grid-template-rows:15rem;
+    }
+
+    .sin-texto {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 25rem;
+        margin-top: -7rem;
+    }
+
+    .div-regla {
+        margin-top: -13rem;
+        /*/border: 2px solid black;/*/
+    }
+
+    .regla {
+        display: inline-block;
+        font-size: 1.4rem;
+        width: 100%;
+    }
+
+    .container-btns {
+        margin: 3rem 1rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    /*/[id*="container-btns-item"] {
+        border: 2px solid coral;
+    }/*/
+
+    #container-btns-item1 {
+        display: none;
+    }
+    
+    #container-btns-item3 {
+        width:max-content;
+    }
+
+    #encriptar {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .ftr {
+        margin-top: 7rem;
+    }
+}
